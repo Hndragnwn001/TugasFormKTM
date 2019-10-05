@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="Nama"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/tvUsername"
+        app:layout_constraintTop_toBottomOf="@+id/tvUsername"
+        tools:ignore="Autofill,LabelFor" />
+
+    <TextView
+        android:id="@+id/tvNim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="NIM"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/etUsername"
+        app:layout_constraintTop_toBottomOf="@+id/etUsername"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/etNim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/tvNim"
+        app:layout_constraintTop_toBottomOf="@+id/tvNim"
+        tools:ignore="Autofill,LabelFor" />
+
+    <TextView
+        android:id="@+id/tvProdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Prodi"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/etNim"
+        app:layout_constraintTop_toBottomOf="@+id/etNim"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/etProdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/tvProdi"
+        app:layout_constraintTop_toBottomOf="@+id/tvProdi"
+        tools:ignore="Autofill,LabelFor" />
+
+    <TextView
+        android:id="@+id/tvTTL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="TTL"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/etProdi"
+        app:layout_constraintTop_toBottomOf="@+id/etProdi"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/etTTL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/tvTTL"
+        app:layout_constraintTop_toBottomOf="@+id/tvTTL"
+        tools:ignore="Autofill,LabelFor" />
+
+    <TextView
+        android:id="@+id/tvAlamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Alamat"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/etTTL"
+        app:layout_constraintTop_toBottomOf="@+id/etTTL"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/etAlamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/tvAlamat"
+        app:layout_constraintTop_toBottomOf="@+id/tvAlamat"
+        tools:ignore="Autofill,LabelFor" />
+
+    <Button
+        android:id="@+id/btClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Clear"
+        app:layout_constraintStart_toStartOf="@+id/etAlamat"
+        app:layout_constraintTop_toBottomOf="@+id/etAlamat"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="@+id/etAlamat"
+        app:layout_constraintTop_toBottomOf="@+id/etAlamat"
+        tools:ignore="HardcodedText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
